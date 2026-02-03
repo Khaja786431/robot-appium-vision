@@ -11,7 +11,7 @@ Reads DUT configuration from ``configurations.ini``.
 
 **Example**
 
-.. code-block:: robot
+.. code-block:: none
 
    ${device}=    Get Device Id    Phone
 
@@ -26,7 +26,7 @@ Starts or reuses an Appium session for a device.
 
 **Example**
 
-.. code-block:: robot
+.. code-block:: none
 
    Start Appium Session    Phone
 
@@ -38,7 +38,7 @@ Stops the active Appium session.
 
 **Example**
 
-.. code-block:: robot
+.. code-block:: none
 
    Stop Appium Session
 
@@ -54,7 +54,7 @@ Verifies exact visible text using Appium XML.
 
 **Example**
 
-.. code-block:: robot
+.. code-block:: none
 
    Verify Text Appium Full    Settings    Phone
 
@@ -71,7 +71,7 @@ Taps screen using X,Y coordinates from JSON.
 
 **Example**
 
-.. code-block:: robot
+.. code-block:: none
 
    Tap By Coordinates    coords.json    settings_icon    Phone
 
@@ -87,7 +87,7 @@ Uses OCR to locate visible text and tap it.
 
 **Example**
 
-.. code-block:: robot
+.. code-block:: none
 
    Tap By Text    Bluetooth    Phone
 
@@ -104,7 +104,7 @@ Verifies an image on screen using OpenCV.
 
 **Example**
 
-.. code-block:: robot
+.. code-block:: none
 
    Verify Image Element    wifi_icon.png    Cluster    0.85
 
@@ -121,7 +121,7 @@ Finds an image and clicks the matched area.
 
 **Example**
 
-.. code-block:: robot
+.. code-block:: none
 
    Click By Image    play.png    Phone
 
@@ -138,7 +138,7 @@ Executes shell command using Appium ``mobile:shell``.
 
 **Example**
 
-.. code-block:: robot
+.. code-block:: none
 
    ${out}=    Run Command    dumpsys battery    Phone
 
@@ -154,7 +154,7 @@ Sends Android key event.
 
 **Example**
 
-.. code-block:: robot
+.. code-block:: none
 
    Press Key    3    Phone
 
@@ -171,7 +171,7 @@ Performs safe horizontal swipe.
 
 **Example**
 
-.. code-block:: robot
+.. code-block:: none
 
    Swipe Left Right    Phone    left
 
@@ -188,7 +188,7 @@ Performs safe vertical scrolling.
 
 **Example**
 
-.. code-block:: robot
+.. code-block:: none
 
    Scroll Top Bottom    Phone    down
 
@@ -204,7 +204,7 @@ Starts Android screen recording via ADB.
 
 **Example**
 
-.. code-block:: robot
+.. code-block:: none
 
    Start Screen Recording    Phone    Settings_Test
 
@@ -220,7 +220,7 @@ Stops recording and pulls video locally.
 
 **Example**
 
-.. code-block:: robot
+.. code-block:: none
 
    Stop Screen Recording    Phone    Results/video.mp4
 
@@ -237,6 +237,6 @@ Embeds recorded video in Robot report.
 
 **Example**
 
-.. code-block:: robot
+.. code-block:: none
 
    Test Video    Results/video.mp4    480    Execution Video
