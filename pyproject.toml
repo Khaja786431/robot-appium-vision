@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[project.scripts]
+appium-vision = "appium_vision.cli:main"
+
+
+[project]
+name = "robot-appium-vision"
+version = "0.1.2"
+description = "Robot Framework Appium keyword library with OCR and image-based actions"
+authors = [
+    { name="Khajavali", email="dudekulakhaja786@gmail.com" }
+]
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.10"
+
+dependencies = [
+    "robotframework",
+    "appium-python-client",
+    "selenium",
+    "opencv-python",
+    "pytesseract"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Framework :: Robot Framework",
+    "Topic :: Software Development :: Testing",
+    "License :: OSI Approved :: MIT License"
+]
+
+[project.urls]
+Homepage = "https://github.com/khaja786431/robot-appium-vision"
