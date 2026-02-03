@@ -1,0 +1,295 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appium Keywords &mdash; Robot Appium Vision 0.1.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/documentation_options.js?v=92734c54"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="CLI Usage" href="cli.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Robot Appium Vision
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Appium Keywords</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#get-device-id">Get Device Id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#start-appium-session">Start Appium Session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stop-appium-session">Stop Appium Session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#verify-text-appium-full">Verify Text Appium Full</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tap-by-coordinates">Tap By Coordinates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tap-by-text">Tap By Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#verify-image-element">Verify Image Element</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#click-by-image">Click By Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#run-command">Run Command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#press-key">Press Key</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#swipe-left-right">Swipe Left Right</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scroll-top-bottom">Scroll Top Bottom</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#start-screen-recording">Start Screen Recording</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stop-screen-recording">Stop Screen Recording</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#test-video">Test Video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">CLI Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Robot Appium Vision</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Appium Keywords</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/keywords.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="appium-keywords">
+<h1>Appium Keywords<a class="headerlink" href="#appium-keywords" title="Link to this heading">¶</a></h1>
+<section id="get-device-id">
+<h2>Get Device Id<a class="headerlink" href="#get-device-id" title="Link to this heading">¶</a></h2>
+<p>Reads DUT configuration from <code class="docutils literal notranslate"><span class="pre">configurations.ini</span></code>.</p>
+<p><strong>Arguments</strong>
+- <code class="docutils literal notranslate"><span class="pre">dut_name</span></code> – Logical device name (Phone / Main / Cluster)</p>
+<p><strong>Example</strong></p>
+<div class="highlight-robot notranslate"><div class="highlight"><pre><span></span>${device}=    Get Device Id    Phone
+</pre></div>
+</div>
+</section>
+<section id="start-appium-session">
+<h2>Start Appium Session<a class="headerlink" href="#start-appium-session" title="Link to this heading">¶</a></h2>
+<p>Starts or reuses an Appium session for a device.</p>
+<p><strong>Arguments</strong>
+- <code class="docutils literal notranslate"><span class="pre">dut_name</span></code></p>
+<p><strong>Example</strong></p>
+<div class="highlight-robot notranslate"><div class="highlight"><pre><span></span>Start Appium Session    Phone
+</pre></div>
+</div>
+</section>
+<section id="stop-appium-session">
+<h2>Stop Appium Session<a class="headerlink" href="#stop-appium-session" title="Link to this heading">¶</a></h2>
+<p>Stops the active Appium session.</p>
+<p><strong>Example</strong></p>
+<div class="highlight-robot notranslate"><div class="highlight"><pre><span></span>Stop Appium Session
+</pre></div>
+</div>
+</section>
+<section id="verify-text-appium-full">
+<h2>Verify Text Appium Full<a class="headerlink" href="#verify-text-appium-full" title="Link to this heading">¶</a></h2>
+<p>Verifies exact visible text using Appium XML.</p>
+<p><strong>Arguments</strong>
+- <code class="docutils literal notranslate"><span class="pre">expected_text</span></code>
+- <code class="docutils literal notranslate"><span class="pre">dut_name</span></code></p>
+<p><strong>Example</strong></p>
+<div class="highlight-robot notranslate"><div class="highlight"><pre><span></span>Verify Text Appium Full    Settings    Phone
+</pre></div>
+</div>
+</section>
+<section id="tap-by-coordinates">
+<h2>Tap By Coordinates<a class="headerlink" href="#tap-by-coordinates" title="Link to this heading">¶</a></h2>
+<p>Taps screen using X,Y coordinates from JSON.</p>
+<p><strong>Arguments</strong>
+- <code class="docutils literal notranslate"><span class="pre">json_name</span></code>
+- <code class="docutils literal notranslate"><span class="pre">key_name</span></code>
+- <code class="docutils literal notranslate"><span class="pre">dut_name</span></code></p>
+<p><strong>Example</strong></p>
+<div class="highlight-robot notranslate"><div class="highlight"><pre><span></span>Tap By Coordinates    coords.json    settings_icon    Phone
+</pre></div>
+</div>
+</section>
+<section id="tap-by-text">
+<h2>Tap By Text<a class="headerlink" href="#tap-by-text" title="Link to this heading">¶</a></h2>
+<p>Uses OCR to locate visible text and tap it.</p>
+<p><strong>Arguments</strong>
+- <code class="docutils literal notranslate"><span class="pre">expected_text</span></code>
+- <code class="docutils literal notranslate"><span class="pre">dut_name</span></code></p>
+<p><strong>Example</strong></p>
+<div class="highlight-robot notranslate"><div class="highlight"><pre><span></span>Tap By Text    Bluetooth    Phone
+</pre></div>
+</div>
+</section>
+<section id="verify-image-element">
+<h2>Verify Image Element<a class="headerlink" href="#verify-image-element" title="Link to this heading">¶</a></h2>
+<p>Verifies an image on screen using OpenCV.</p>
+<p><strong>Arguments</strong>
+- <code class="docutils literal notranslate"><span class="pre">image_name</span></code>
+- <code class="docutils literal notranslate"><span class="pre">dut_name</span></code>
+- <code class="docutils literal notranslate"><span class="pre">threshold</span></code> (optional)</p>
+<p><strong>Example</strong></p>
+<div class="highlight-robot notranslate"><div class="highlight"><pre><span></span>Verify Image Element    wifi_icon.png    Cluster    0.85
+</pre></div>
+</div>
+</section>
+<section id="click-by-image">
+<h2>Click By Image<a class="headerlink" href="#click-by-image" title="Link to this heading">¶</a></h2>
+<p>Finds an image and clicks the matched area.</p>
+<p><strong>Arguments</strong>
+- <code class="docutils literal notranslate"><span class="pre">image_name</span></code>
+- <code class="docutils literal notranslate"><span class="pre">dut_name</span></code>
+- <code class="docutils literal notranslate"><span class="pre">threshold</span></code></p>
+<p><strong>Example</strong></p>
+<div class="highlight-robot notranslate"><div class="highlight"><pre><span></span>Click By Image    play.png    Phone
+</pre></div>
+</div>
+</section>
+<section id="run-command">
+<h2>Run Command<a class="headerlink" href="#run-command" title="Link to this heading">¶</a></h2>
+<p>Executes shell command using Appium <code class="docutils literal notranslate"><span class="pre">mobile:shell</span></code>.</p>
+<p><strong>Arguments</strong>
+- <code class="docutils literal notranslate"><span class="pre">command</span></code>
+- <code class="docutils literal notranslate"><span class="pre">dut_name</span></code>
+- <code class="docutils literal notranslate"><span class="pre">timeout_ms</span></code></p>
+<p><strong>Example</strong></p>
+<div class="highlight-robot notranslate"><div class="highlight"><pre><span></span>${out}=    Run Command    dumpsys battery    Phone
+</pre></div>
+</div>
+</section>
+<section id="press-key">
+<h2>Press Key<a class="headerlink" href="#press-key" title="Link to this heading">¶</a></h2>
+<p>Sends Android key event.</p>
+<p><strong>Arguments</strong>
+- <code class="docutils literal notranslate"><span class="pre">keycode</span></code>
+- <code class="docutils literal notranslate"><span class="pre">dut_name</span></code></p>
+<p><strong>Example</strong></p>
+<div class="highlight-robot notranslate"><div class="highlight"><pre><span></span>Press Key    3    Phone
+</pre></div>
+</div>
+</section>
+<section id="swipe-left-right">
+<h2>Swipe Left Right<a class="headerlink" href="#swipe-left-right" title="Link to this heading">¶</a></h2>
+<p>Performs safe horizontal swipe.</p>
+<p><strong>Arguments</strong>
+- <code class="docutils literal notranslate"><span class="pre">dut_name</span></code>
+- <code class="docutils literal notranslate"><span class="pre">direction</span></code> (left/right)
+- <code class="docutils literal notranslate"><span class="pre">percent</span></code></p>
+<p><strong>Example</strong></p>
+<div class="highlight-robot notranslate"><div class="highlight"><pre><span></span>Swipe Left Right    Phone    left
+</pre></div>
+</div>
+</section>
+<section id="scroll-top-bottom">
+<h2>Scroll Top Bottom<a class="headerlink" href="#scroll-top-bottom" title="Link to this heading">¶</a></h2>
+<p>Performs safe vertical scrolling.</p>
+<p><strong>Arguments</strong>
+- <code class="docutils literal notranslate"><span class="pre">dut_name</span></code>
+- <code class="docutils literal notranslate"><span class="pre">direction</span></code> (up/down)
+- <code class="docutils literal notranslate"><span class="pre">percent</span></code></p>
+<p><strong>Example</strong></p>
+<div class="highlight-robot notranslate"><div class="highlight"><pre><span></span>Scroll Top Bottom    Phone    down
+</pre></div>
+</div>
+</section>
+<section id="start-screen-recording">
+<h2>Start Screen Recording<a class="headerlink" href="#start-screen-recording" title="Link to this heading">¶</a></h2>
+<p>Starts Android screen recording via ADB.</p>
+<p><strong>Arguments</strong>
+- <code class="docutils literal notranslate"><span class="pre">dut_name</span></code>
+- <code class="docutils literal notranslate"><span class="pre">test_name</span></code></p>
+<p><strong>Example</strong></p>
+<div class="highlight-robot notranslate"><div class="highlight"><pre><span></span>Start Screen Recording    Phone    Settings_Test
+</pre></div>
+</div>
+</section>
+<section id="stop-screen-recording">
+<h2>Stop Screen Recording<a class="headerlink" href="#stop-screen-recording" title="Link to this heading">¶</a></h2>
+<p>Stops recording and pulls video locally.</p>
+<p><strong>Arguments</strong>
+- <code class="docutils literal notranslate"><span class="pre">dut_name</span></code>
+- <code class="docutils literal notranslate"><span class="pre">local_video_path</span></code></p>
+<p><strong>Example</strong></p>
+<div class="highlight-robot notranslate"><div class="highlight"><pre><span></span>Stop Screen Recording    Phone    Results/video.mp4
+</pre></div>
+</div>
+</section>
+<section id="test-video">
+<h2>Test Video<a class="headerlink" href="#test-video" title="Link to this heading">¶</a></h2>
+<p>Embeds recorded video in Robot report.</p>
+<p><strong>Arguments</strong>
+- <code class="docutils literal notranslate"><span class="pre">video_path</span></code>
+- <code class="docutils literal notranslate"><span class="pre">width</span></code>
+- <code class="docutils literal notranslate"><span class="pre">title</span></code></p>
+<p><strong>Example</strong></p>
+<div class="highlight-robot notranslate"><div class="highlight"><pre><span></span>Test Video    Results/video.mp4    480    Execution Video
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="cli.html" class="btn btn-neutral float-right" title="CLI Usage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, Khajavali.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
